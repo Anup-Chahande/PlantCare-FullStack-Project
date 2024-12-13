@@ -1,0 +1,37 @@
+
+<h2 style="text-align: center; text-decoration: underline;background-color: rgb(115, 233, 213);color:rgb(255, 63, 79);">All Available Plants</h2>
+
+
+<div class="container">
+    <table class="table table-stripped">
+        <thead>
+            <tr>
+        <th>Plant id</th>
+    <th>Plant age</th>
+    <th>Plant Name</th>
+    <th>Plant Care Requirement</th>
+    <th>Plant Action</th>
+    </tr>
+</thead>
+<tbody>
+    
+    <tr *ngFor="let i of Allplants">
+
+        <td>{{i.plant_id}}</td>
+        <td>{{i.plant_Age}}</td>
+        <td>{{i.plant_Name}}</td>
+        <td>{{i.requirement}}</td>
+        <td>
+            <button  class="btn btn-danger" (click)="delete(i.plant_id)">Delete</button>
+            <button  class="btn btn-info" (click)="updateplants(i.plant_id)">Update</button>
+
+        </td>
+
+
+
+    </tr>
+</tbody>
+
+
+</table>
+</div>

@@ -1,0 +1,32 @@
+<h2 class="text-center" style="text-decoration: underline; background-color: rgb(115, 233, 213);color:rgb(255, 63, 79);">Update Plants</h2>
+
+
+<form>
+<h5>Id</h5>
+<div class="form-group">
+<input type="number" class="form-control" name="id" [(ngModel)]="datamain.plant_id" readonly="readonly">
+</div>
+<br>
+
+<h5>Age</h5>
+<div class="form-group">
+<input type="number" class="form-control" name="age" [(ngModel)]="datamain.plant_Age">
+</div>
+<br>
+
+<h5>Name</h5>
+<div class="form-group">
+<input type="text" class="form-control" name="date"[(ngModel)]="datamain.plant_Name">
+</div>
+<br>
+
+<h5>Requirement</h5>
+<div class="form-group">
+<input type="text" class="form-control" name="description" [(ngModel)]="datamain.requirement">
+</div>
+<br>
+<div class="text-center">
+<button class="btn btn-info" (click)="updateplant()">Update</button>
+</div>
+</form>
+

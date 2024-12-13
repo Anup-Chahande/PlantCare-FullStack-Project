@@ -1,0 +1,27 @@
+
+<h2 style="text-align: center; text-decoration: underline;background-color: rgb(115, 233, 213);color:rgb(255, 63, 79);">Add Plants</h2>
+
+<br>
+
+<div class="container">
+<form>
+    <h5>Enter Id</h5>
+    <input type="number" placeholder="id" class="form-control input-sm" name="id" [(ngModel)]="addplant.plant_id" >
+    <br>
+    
+    <h5>Enter Plant Age</h5>
+    <input type="number" placeholder="age" class="form-control input-sm" name="age" [(ngModel)]="addplant.plant_Age" >
+    <br>
+
+    <h5>Enter Plant Name</h5>
+    <input type="text" placeholder="name" class="form-control input-sm" name="name" [(ngModel)]="addplant.plant_Name">
+    <br>
+
+    <h5>Enter Plant Care Requirement</h5>
+    <input type="text" placeholder="Requirement" class="form-control input-sm" name="requirement" [(ngModel)]="addplant.requirement" >
+    <br>
+   <div class="text-center">
+    <button class="btn btn-outline-success" (click)="submit()">Add Plant</button>
+</div>
+</form>
+</div>
